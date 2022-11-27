@@ -5,7 +5,9 @@
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 400;
 }
-
+.burger__container {
+  display: none;
+}
 .highlight {
   color: #f9804b !important;
 }
@@ -43,9 +45,7 @@
   margin: auto;
   overflow: hidden;
 }
-/* //////////////////////////////////// global //////////////////////////// */
 
-/* //////////////////////////////////// header //////////////////////////// */
 
 .header {
   height: 80px;
@@ -102,7 +102,6 @@
   line-height: 22px;
   margin-right: 58px;
   text-align: left;
-  /* letter-spacing: 0.8px; */
 }
 .header__link {
   display: block;
@@ -113,8 +112,7 @@
   line-height: 22px;
   /* or 22px */
   text-decoration: none;
-  /* margin-right: 2px; */
-  /* letter-spacing: 0.8px; */
+  
   color: #ffffff;
   margin-right: 2px;
 }
@@ -466,9 +464,7 @@
   text-align: right;
   color: #333b41;
 }
-/* //////////////////////////////////// section__two //////////////////////////// */
 
-/* //////////////////////////////////// footer //////////////////////////// */
 .footer__fWidth {
   height: 443px;
   background: #111115;
@@ -488,7 +484,6 @@
   font-size: 24px;
   line-height: 29px;
   margin-bottom: 14px;
-  /* identical to box height, or 29px */
 
   color: #ffffff;
 }
@@ -560,10 +555,8 @@
 }
 .footer__nav__social__creator--container {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   margin-bottom: 50px;
-  /* padding-top: 50px; */
 }
 .footer__navigation {
   margin-bottom: -35px;
@@ -587,7 +580,6 @@
   margin-right: 58px;
   text-align: left;
   margin-bottom: 10px;
-  /* letter-spacing: 0.8px; */
 }
 .footer__navigation--link:hover {
   color: #ac620e;
@@ -629,7 +621,6 @@
   font-weight: 100;
   font-size: 16px;
   line-height: 21px;
-  /* identical to box height, or 21px */
   margin-bottom: 10px;
 
   color: #ffffff;
@@ -637,4 +628,3 @@
 .footer__author--par1 {
   margin-bottom: 10px;
 }
-/* //////////////////////////////////// footer //////////////////////////// */
