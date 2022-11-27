@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online-zoo</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adaptive.css">
 </head>
 <body>
     <div class="main__wrapper">
@@ -46,6 +47,9 @@
                     </nav>
                 </div>
                 <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" class="header__link">Designed by ©</a>
+                <div class="burger__container">
+                    <img src="../assets/images/burger_menu.png" alt="burger" class="burger__img">
+                </div>
             </div>
          
         </div>
@@ -84,48 +88,48 @@
                                         <div class="section__two--line"></div>
                                         <div class="section__two__radio">
                                             <input type="radio" id="5000" name="fav_language" value="5000">
-                                            <label for="5000">$5000</label>
+                                            <label class="sc__two--label" for="5000">$5000</label>
                                         </div>
                                         <div class="section__two__radio">
                                             <input type="radio" id="2000" name="fav_language" value="2000">
-                                            <label for="2000">$2000</label>
+                                            <label class="sc__two--label" for="2000">$2000</label>
                                         </div>
                                         <div class="section__two__radio">
                                             <input class="radio__active" type="radio" id="1000" name="fav_language" value="1000">
-                                            <label class="highlight" for="1000">$1000</label>
+                                            <label class="sc__two--label highlight"  for="1000">$1000</label>
                                         </div>
                                         <div class="section__two__radio">
                                             <input type="radio" id="500" name="fav_language" value="500">
-                                            <label for="500">$500</label>
+                                            <label class="sc__two--label" for="500">$500</label>
                                         </div>
                                         <div class="section__two__radio">
                                             <input type="radio" id="250" name="fav_language" value="250">
-                                            <label for="250">$250</label>
+                                            <label class="sc__two--label" for="250">$250</label>
                                         </div>
                                         <div class="section__two__radio">
                                             <input type="radio" id="100" name="fav_language" value="100">
-                                            <label for="100">$100</label>
+                                            <label class="sc__two--label" for="100">$100</label>
                                         </div>
                                         <div class="section__two__radio">
                                             <input type="radio" id="50" name="fav_language" value="50">
-                                            <label for="50">$50</label>
+                                            <label class="sc__two--label" for="50">$50</label>
                                         </div>
                                         <div class="section__two__radio">
                                             <input type="radio" id="25" name="fav_language" value="25">
-                                            <label for="25">$25</label>
+                                            <label class="sc__two--label" for="25">$25</label>
                                         </div>
                                         
                                     </div>
                                     <div class="section__two__input--contaner">
                                         <div class="section__two__amount--container">
-                                            <input placeholder="Another amount" class="section__two__amount" type="number" name="" id="">
+                                            <input placeholder="Another amount" min="1" max="9999" class="section__two__amount" value="1000" type="number" name="" id="">
                                             <img class="dollar" src="../assets/images/dollar.png" alt="dollar">
                                         </div>
                                         <div class="section__two__input__radio--container">
                                             <input type="radio" id="Monthly" name="fav_language" value="Monthly">
-                                            <label  class="Monthly1" for="Monthly">Monthly</label>
+                                            <label class="sc__two--label"  class="Monthly1" for="Monthly">Monthly</label class="sc__two--label">
                                             <input checked type="radio" id="Once" name="fav_language" value="Once">
-                                            <label class="Once1" for="Once">Once</label>
+                                            <label class="sc__two--label" class="Once1" for="Once">Once</label>
                                         </div>
                                         <a class="section__two__link" href="">Feed a friend now</a>
                                         <p class="section__two__paragraph--last">Share with your friends on social networks </p>
@@ -141,11 +145,11 @@
                 <footer class="footer container__content">
                     <div class="footer__logo__form--container">
         
-                        <div class="header__logo">
-                            <h2 class="header__logo--text">
+                        <div class="header__logo footer__logo">
+                            <h2 class="header__logo--text footer__logo--text">
                                 PetStory
-                                <span class="header__logo--span">
-                                    <img src="../assets/images/bamboo.png" alt="bamboo" class="bamboo">
+                                <span class="header__logo--span footer__logo--span">
+                                    <img src="../assets/images/bamboo.png" alt="bamboo" class="bamboo bamboo__footer">
                                     <p class="header__logo--paragraph">online</p>
                                 </span>
                             </h2>
