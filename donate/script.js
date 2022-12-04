@@ -1,7 +1,19 @@
-const logoHeader = document.querySelectorAll(".header__logo");
+const logoHeader = document.querySelectorAll(".header__logo--text");
 const navHeader = document.querySelector(".header__navigation--ul");
+const nvigationHead = document.querySelector(".nav__logo__container");
 const navFooter = document.querySelector(".footer__navigation--ul");
 const secTwoRadio = document.querySelector(".section__two__radio--container");
+const burgerIcon = document.querySelector(".burger__container");
+const overly = document.querySelector(".overly--black");
+const body = document.querySelector("body");
+const closeBtnBurger = document.querySelector(".img__x--continer");
+overly.style.height = `${body.getBoundingClientRect().height}px`;
+
+function overlyFunc() {
+  window.addEventListener("resize", () => {
+    overly.style.height = `${body.getBoundingClientRect().height}px`;
+  });
+}
 function radioBtnFunc() {
   if (window.innerWidth <= 375) {
     const radioOne = document.getElementById("1000");
@@ -93,8 +105,10 @@ function navFunc() {
     } else if (e.target.textContent == "Zoos") {
       e.target.classList.add("highlight");
     } else if (e.target.textContent == "Donate") {
-      e.target.classList.add("highlight");
       window.location.href = "index.html";
+      e.target.classList.add("highlight");
+    } else if (e.target.textContent == "Contact us") {
+      e.target.classList.add("highlight");
     }
   });
   logoHeader.forEach((e) => {
@@ -115,6 +129,27 @@ function navFunc() {
     e.target.classList.add("highlight");
   });
 }
+function burgerFun() {
+  burgerIcon.addEventListener("click", () => {
+    nvigationHead.style.display = "block";
+    overly.classList.remove("none");
+    overly.classList.add("block");
+    closeBtnBurger.classList.remove("none");
+    closeBtnBurger.classList.add("block");
+  });
+  overly.addEventListener("click", () => {
+    nvigationHead.style.display = "none";
+    overly.classList.remove("block");
+    overly.classList.add("none");
+  });
+  closeBtnBurger.addEventListener("click", () => {
+    nvigationHead.style.display = "none";
+    overly.classList.remove("block");
+    overly.classList.add("none");
+  });
+}
 radioBtnFunc();
 navFunc();
 inputFunc();
+overlyFunc();
+burgerFun();
